@@ -85,3 +85,20 @@ function isValidLength(value, min, max) {
     let pattern = RegExp('^[0-9A-Za-z@#$%]{'+min+','+max+'}$');
     return pattern.test(value);
 }
+
+
+function previewFile() {
+    let preview = document.querySelector('.uploadPic');
+    let file    = document.querySelector('input[type=file]').files[0];
+    let reader  = new FileReader();
+  
+    reader.onloadend = function () {
+      preview.src = reader.result;
+    }
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      preview.src = "";
+    }
+  }

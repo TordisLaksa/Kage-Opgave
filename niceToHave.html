@@ -32,7 +32,8 @@
                   </div>
                   <div>
                       <label for="cakePic">Billede af kage</label>
-                      <input type="file" id="cakePic" name="cakePic" required><br />
+                      <input type="file" id="cakePic" name="cakePic" accept="image/png, image/jpeg" oncharge="previewFile()" required><br />
+                      <img class="uploadPic" src="" height="200" alt="Image preview...">
                   </div>
                   <div>
                     <label for="cakePic">Billede af dig</label>
