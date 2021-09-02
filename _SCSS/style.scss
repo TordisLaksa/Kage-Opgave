@@ -28,13 +28,18 @@ footer{
     padding-top: 2vw;
     padding-bottom: 2vw;
     h2{
+        font-size: 4vw;
+    }
+    #footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         
-    }
-    img{
-        display: inline-block;
-        width: 15vw;
-    }
-    ul{
-        display: inline-block;
+        img{
+            display: inline-block;
+            width: 15vw;
+        }
+        ul{
+            display: inline-block;
+        }
     }
 }
