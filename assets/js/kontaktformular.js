@@ -87,18 +87,20 @@ function isValidLength(value, min, max) {
 }
 
 
-function previewFile() {
-    let preview = document.querySelector('.uploadPic');
-    let file    = document.querySelector('input[type=file]').files[0];
-    let reader  = new FileReader();
-  
-    reader.onloadend = function () {
-      preview.src = reader.result;
-    }
-  
+function testFunction(){
+    let input = document.getElementById("cakePic");
+    const [file] = input.files;
     if (file) {
-      reader.readAsDataURL(file);
-    } else {
-      preview.src = "";
+        let img = document.getElementById("testImg");
+        img.src = URL.createObjectURL(file)
     }
+  }
+
+  function optionalFunction(){
+      let optionalInput = document.getElementById("personPic");
+      const [optionalFile] = optionalInput.files;
+      if(optionalFile) {
+          let optionalImg = document.getElementById("optionalImg");
+          optionalImg.src = URL.createObjectURL(optionalFile);
+      }
   }

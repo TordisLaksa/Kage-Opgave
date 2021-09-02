@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/js/kontaktformular.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -31,13 +32,14 @@
                       <textarea type="message" name="guidence" placeholder="Vejledning" required></textarea>
                   </div>
                   <div>
-                      <label for="cakePic">Billede af kage</label>
-                      <input type="file" id="cakePic" name="cakePic" accept="image/png, image/jpeg" oncharge="previewFile()" required><br />
-                      <img class="uploadPic" src="" height="200" alt="Image preview...">
-                  </div>
+                    <label for="cakePic">Billede af kage</label>
+                    <input accept="image/*" type="file" id="cakePic" class="preview" name="cakePic" onchange="testFunction()" required>
+                    <img id="testImg" src="#"/>
+                </div>
                   <div>
-                    <label for="cakePic">Billede af dig</label>
-                      <input type="file" id="personPic" name="personPic" accept="image/png, image/jpeg">
+                    <label for="personPic">Billede af dig</label>
+                      <input accept="image/*" type="file" id="personPic" class="preview" name="personPic" onchange="optionalFunction()">
+                      <img id="optionalImg" src="#"/>
                   </div>
                   
                   <div class="buttons"> <br />
@@ -45,10 +47,16 @@
                       <button type="button" onclick="validate(this.form)">SEND</button> 
                   </div>
                     </form>
-    
-    
         </section>
-    
-        
+    <footer>
+        <h2>Kontakt Os</h2>
+        <figure id="footer-grid">
+        <img src="assets/images/Logo white.png" alt="cake-logo-white-text">
+        <ul>
+            <li><a href="#">Telefon</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+        </figure>
+    </footer>    
 </body>
 </html>
