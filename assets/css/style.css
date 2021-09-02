@@ -32,12 +32,23 @@ footer {
   padding-bottom: 2vw;
 }
 
-footer img {
+footer h2 {
+  font-size: 4vw;
+}
+
+footer #footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+footer #footer-grid img {
   display: inline-block;
   width: 15vw;
 }
 
-footer ul {
+footer #footer-grid ul {
   display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
