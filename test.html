@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/kontaktformular.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+        <!-- SECTION FORMULAR -->
+        <section>
+              <form id="form">
+                  <div>
+                      <input type="text" id="cakeName" class="text" required placeholder="Kagens navn" />
+                  </div>
+                  <div>
+                      <input type="text" id="firstname" class="text" placeholder="Dit fulde navn" />
+                      <!--required felterne er dem jeg querySelecterAll i min javaScript-->
+                  </div>
+                  <div>
+                      <input type="email" id="email" class="email" required placeholder="Din email" />
+                  </div>
+                  <div>
+                      <input type="number" id="phonenumber" class="number" required placeholder="Dit telefon nummer" />
+                  </div>
+                  <div>
+                      <textarea type="message" name="ingridients" placeholder="Ingredienser" required></textarea>
+                  </div>
+                  <div>
+                      <textarea type="message" name="guidence" placeholder="Vejledning" required></textarea>
+                  </div>
+                  <div>
+                      <label for="cakePic">Billede af kage</label>
+                      <input accept="image/*" type="file" id="cakePic" name="cakePic" onchange="testfunction()" required><br />
+                      <img id="testimg" src="#"/>
+                  </div>
+                  <div>
+                    <label for="cakePic">Billede af dig</label>
+                      <input type="file" id="personPic" name="personPic" accept="image/png, image/jpeg">
+                  </div>
+                  
+                  <div class="buttons"> <br />
+                      <!--jeg kalder funktionen validate, som har parameteret (this.form - altså, den form, som knappen ligger i) -->
+                      <button type="button" onclick="validate(this.form)">SEND</button> 
+                  </div>
+                    </form>
+    
+    
+        </section>
+    
+        
+</body>
+</html>

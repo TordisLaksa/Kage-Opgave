@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://use.typekit.net/rbg7xif.css");
+* {
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+  background-color: #42909b;
+}
+
+body h2 {
+  font-family: bello-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  height: 500px;
+  padding-top: 200px;
+}
+
+footer {
+  background-color: #2c7079;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+footer h2 {
+  font-size: 4vw;
+}
+
+footer #footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+footer #footer-grid img {
+  display: inline-block;
+  width: 15vw;
+}
+
+footer #footer-grid ul {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
